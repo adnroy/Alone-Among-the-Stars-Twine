@@ -251,7 +251,7 @@ $planetimage
 
 
 </tw-passagedata><tw-passagedata pid="4" name="LandingZone" tags="" position="175,610" size="100,100">&lt;&lt;silently&gt;&gt;&lt;&lt;set $instancelog to null&gt;&gt;&lt;&lt;/silently&gt;&gt;
-There are $discnum things left to discover on this planet.
+&lt;&lt;if $discnum gt 1&gt;&gt;There are $discnum things left to discover on this planet.&lt;&lt;elseif $discnum is 1&gt;&gt;There is 1 thing left to discover on this planet.&lt;&lt;else&gt;&gt;You&#39;ve seen everything this planet has to offer.&lt;&lt;/if&gt;&gt;
 
 &lt;&lt;if $discnum &gt; 0&gt;&gt;[[Go exploring|Discover]]&lt;&lt;/if&gt;&gt;
 [[Leave|Departure]]</tw-passagedata><tw-passagedata pid="5" name="Discover" tags="" position="337,789" size="100,100">&lt;&lt;silently&gt;&gt;
@@ -293,11 +293,11 @@ Planet &lt;&lt;textbox &quot;$planetname&quot; $planetname&gt;&gt;
 
 [[Discover a new planet|NewPlanet]]
 
-[[Return home|Home]]</tw-passagedata><tw-passagedata pid="8" name="Home" tags="" position="617,1062" size="100,100">Your journey is over. What do you do with your ship&#39;s log?
+[[Return home|Home]]</tw-passagedata><tw-passagedata pid="8" name="Home" tags="" position="616,1062" size="100,100">Your journey is over. What do you do with your ship&#39;s log?
 
 &lt;a data-passage=&quot;Credits&quot;&gt;Save it.&lt;/a&gt; I want to remember my travels.
 
-[[Burn it.|Start][$globallog to &#39;&#39;]] The memories inside bring me pain.
+[[Burn it.|Credits][$globallog to &#39;&#39;]] The memories inside bring me pain.
 
 </tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="544,437" size="100,100">&lt;&lt;set $instancelog to null&gt;&gt;
 &lt;&lt;set $planetlog to &#39;&#39;&gt;&gt;
