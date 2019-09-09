@@ -322,7 +322,7 @@ Your journey is over. What do you do with your ship&#39;s log?&lt;div id=&quot;e
 
 [[Burn it.|Credits]] The memories inside bring me pain.
 
-</tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="544,437" size="100,100">&lt;&lt;set $instancelog to null&gt;&gt;
+</tw-passagedata><tw-passagedata pid="9" name="StoryInit" tags="" position="544,438" size="100,100">&lt;&lt;set $instancelog to null&gt;&gt;
 &lt;&lt;set $planetlog to &#39;&#39;&gt;&gt;
 &lt;&lt;set $globallog to &#39;&#39;&gt;&gt;
 &lt;&lt;set $planetname to &#39;&#39;&gt;&gt;
@@ -336,7 +336,7 @@ Your journey is over. What do you do with your ship&#39;s log?&lt;div id=&quot;e
 &lt;&lt;set $arg1Save to null&gt;&gt;
 &lt;&lt;set $arg2Save to null&gt;&gt;
 &lt;&lt;set $discnumSave to null&gt;&gt;
-&lt;&lt;set $print to false&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="StoryCaption" tags="" position="553,317" size="100,100">&lt;div id=&quot;utilitytext&quot;&gt;&lt;&lt;link &quot;Restart Game&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;run Engine.restart()&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
+&lt;&lt;set $print to false&gt;&gt;</tw-passagedata><tw-passagedata pid="10" name="StoryCaption" tags="" position="553,319" size="100,100">&lt;div id=&quot;utilitytext&quot;&gt;&lt;&lt;link &quot;Restart Game&quot; &quot;Start&quot;&gt;&gt;&lt;&lt;set $diffSave to null&gt;&gt;&lt;&lt;set $arg1Save to null&gt;&gt;&lt;&lt;set $arg2Save to null&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
 
 &lt;div id=&quot;log&quot;&gt;SHIP&#39;S LOG&lt;br&gt;&lt;br&gt;$globallog&lt;/div&gt;</tw-passagedata><tw-passagedata pid="11" name="Credits" tags="inspace" position="410,1061" size="100,100">&lt;&lt;silently&gt;&gt;if (!UIBar.isStowed()) {&lt;&lt;run UIBar.stow(true)&gt;&gt;}&lt;&lt;set $globallog to &#39;&#39;&gt;&gt;&lt;&lt;/silently&gt;&gt;
 &lt;h2&gt;Credits&lt;/h2&gt;
